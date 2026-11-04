@@ -1,0 +1,17 @@
+{
+    "image1": {
+        "data": "hwQQABAAAAD//////////393d3d3d3f3f3d3d3d3d/d/d3cRd3d39393dxF3d3f3f3d3d3cRd/d/d3d3dxd39393d3d3F3f3f3d3d3cXd/d/d3d3dxd39393d3d3EXf3f3d3EXd3d/d/d3cRd3d39393d3d3d3f3f3d3d3d3d/f//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Player"
+    },
+    "image2": {
+        "data": "hwQQABAAAAD//////////09ERERERET0TyIiIiIiIvRPEhIhIiIi9E8SEiEiIiL0TyIhIiIiIvRPIiIiIiEi9E8iIiIiISL0TyIiIiIhIvRPIiIiIiEi9E8iISIiIiL0TxISISIiIvRPEhIhIiIi9E8iIiIiIiL0T0RERERERPT//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Enemy 1"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
