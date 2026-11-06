@@ -1,10 +1,5 @@
 function enemies () {
-    if (enemy_1.isHittingTile(CollisionDirection.Right)) {
-        enemy_1.vx = -25
-    }
-    if (enemy_1.isHittingTile(CollisionDirection.Left)) {
-        enemy_1.vx = 25
-    }
+	
 }
 function enemy_spawn () {
     for (let value of tiles.getTilesByType(assets.tile`Enemy Spawn 1`)) {
@@ -31,5 +26,11 @@ forever(function () {
     }
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         enemies()
+        if (value.isHittingTile(CollisionDirection.Right)) {
+            value.vx = -25
+        }
+        if (value.isHittingTile(CollisionDirection.Left)) {
+            value.vx = 25
+        }
     }
 })
