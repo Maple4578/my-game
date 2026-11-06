@@ -1,3 +1,18 @@
+function enemies () {
+    if (enemy_1.isHittingTile(CollisionDirection.Right)) {
+        enemy_1.vx = -25
+    }
+    if (enemy_1.isHittingTile(CollisionDirection.Left)) {
+        enemy_1.vx = 25
+    }
+}
+function enemy_spawn () {
+    for (let value of tiles.getTilesByType(assets.tile`Enemy Spawn 1`)) {
+        enemy_1 = sprites.create(assets.image`Enemy 1`, SpriteKind.Enemy)
+        tiles.placeOnTile(enemy_1, value)
+        tiles.setTileAt(value, assets.tile`transparency16`)
+    }
+}
 let enemy_1: Sprite = null
 let player_image = sprites.create(assets.image`Player`, SpriteKind.Player)
 let speed = 80
@@ -8,13 +23,13 @@ controller.moveSprite(player_image, speed, 0)
 player_image.ay += gravity
 scene.cameraFollowSprite(player_image)
 tiles.setCurrentTilemap(tilemap`Test Level`)
-for (let value of tiles.getTilesByType(assets.tile`Enemy Spawn 1`)) {
-    enemy_1 = sprites.create(assets.image`Enemy 1`, SpriteKind.Enemy)
-    tiles.placeOnTile(enemy_1, value)
-    tiles.setTileAt(value, assets.tile`transparency16`)
-}
+enemy_spawn()
+enemy_1.vx = -25
 forever(function () {
     if (controller.A.isPressed() && player_image.isHittingTile(CollisionDirection.Bottom)) {
         player_image.vy = jump_speed
+    }
+    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
+        enemies()
     }
 })

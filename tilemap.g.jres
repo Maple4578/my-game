@@ -11,7 +11,7 @@
         "displayName": "Base Tile"
     },
     "tile1": {
-        "data": "hwQQABAAAAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIg==",
+        "data": "hwQQABAAAAD//////////09ERERERET0TyIiIiIiIvRPEhIhIiIi9E8SEiEiIiL0TyIhIiIiIvRPIiIiIiEi9E8iIiIiISL0TyIiIiIhIvRPIiIiIiEi9E8iISIiIiL0TxISISIiIvRPEhIhIiIi9E8iIiIiIiL0T0RERERERPT//////////w==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "Enemy Spawn 1"
